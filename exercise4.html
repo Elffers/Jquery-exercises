@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX Exercise</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1 class="page-header">Kittehs!</h1>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="span12">
+				<div id="content">
+					<p>Loading...</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+    $.ajax({  
+		    url: "kitty-ipsum.json",  
+		    dataType: "json",
+		    success: function(response) { 
+		    	
+		    }  
+		});  
+	});
+</script>
+</body>
+</html>
